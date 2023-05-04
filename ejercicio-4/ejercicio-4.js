@@ -20,10 +20,10 @@
 
 - Una variable booleana que diga si el Nombre está contenido en la variable "estudiante"*/
 
-let nombre = " Reymond ";
+let nombre = "Reymond";
 console.log(nombre);
 
-let apellido = "Diaz ";
+let apellido = "Diaz";
 console.log(apellido);
 
 let estudiante = nombre + " " +  apellido;
@@ -38,15 +38,15 @@ console.log(estudianteMinus);
 let numLetras = estudiante.length;
 console.log(numLetras);
 
-let primerLetra = nombre.charAt(0);
+let primerLetra = nombre.slice(0,1);
 console.log(primerLetra);
 
-let ultimaLetra = apellido.charAt(3);
+let ultimaLetra = apellido.slice(apellido.length -1, apellido.length);
 console.log(ultimaLetra);
 
-let eliminarEspacios = estudiante.trim();
+let eliminarEspacios = estudiante.replace(/ /g, "");
 console.log(eliminarEspacios);
 
-let verificarNombre = estudiante.includes("Reymond")
+let verificarNombre = estudiante.includes(nombre)
 console.log(verificarNombre);
 
